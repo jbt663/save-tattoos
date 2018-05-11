@@ -1,4 +1,4 @@
-console.log('donate JS file')
+console.log('donate JS file edit')
 
 // put donate button selector in a var
 var donateButton = document.getElementById('js-submit');
