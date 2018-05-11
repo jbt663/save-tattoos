@@ -1,9 +1,12 @@
 console.log('donate JS file edit')
 
-// put donate button selector in a var
-var donateButton = document.getElementById('js-submit');
 
-// on click of donate button
+// add a click event to the donate button
+document.getElementById('js-submit').addEventListener('click', function(){
+	// get the value of a text input
+	var value = document.getElementById('js-amount').value;
+	alert('Thanks for donating: $' + value)
+})
 // get value of #js-shop <select>
 // get value of #js-amount <input>
 

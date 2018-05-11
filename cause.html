@@ -3,29 +3,49 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Donate</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
 		<style>
 			h2, p { font: normal 16px Helvetica, Arial; }
 			h2 { font-size: 24px; }
+			.row > .div {border-style: none;}
+			body {
+				background-image: url('http://www.fillmurray.com/2000/2000');
+				background-size: auto;
+				background-repeat: no-repeat;
+				background-position: fixed;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Support your local Tatoo shop by donating using the form below:</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p>Select your favorite tatoo shop:</p>
+					<p>
+						<select id="js-shop">
+							<option value="Chicago Arts">Chicago Arts</option>
+							<option value="Phila Arts">Phila Arts</option>
+							<option value="NYC Arts">NYC Arts</option>
+							<option value="Egg Harbor City Tatoos">Egg Harbor City Tatoos</option>
+						</select>
+					</p>
+				</div>
+				<div class="col-md-6">
+					<p>Amount you'd like to donate:</p>
+					<p><input type="text" id="js-amount"></p>
+				</div>
+				<div class="col-xs-12">
+					<button id="js-submit">Submit</button>
+				</div>
 
-		<h2>Support your local Tatoo shop by donating using the form below:</h2>
-
-		<form>
-			<p>Select your favorite tatoo shop:</p>
-			<p>
-				<select id="js-shop">
-					<option value="Chicago Arts">Chicago Arts</option>
-					<option value="Phila Arts">Phila Arts</option>
-					<option value="NYC Arts">NYC Arts</option>
-					<option value="Egg Harbor City Tatoos">Egg Harbor City Tatoos</option>
-				</select>
-			</p>
-			<p>Amount you'd like to donate:</p>
-			<p><input type="text" id="js-amount"></p>
-			<button id="js-submit">Submit</button>
-		</form>
+			</div>
+		</div>
 
 		<script src="js/donate.js" charset="utf-8"></script>
 	</body>
