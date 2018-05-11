@@ -1,0 +1,73 @@
+/* ELEMENTS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+	color:
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #F0FFFF;
+  background-image: url('http://ccmgmedia.com/wp-content/uploads/2018/04/emailcontact.jpg');
+  background-position: center;
+	text-align: center;
+}
+
+h1 {
+  font-family: 'Gugi';
+}
+
+/* IDS */
+
+#wrapper {
+  background-color: transparent;
+  text-align: center;
+}
+
+/* CLASSES */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+  border: 1px solid red;
+}
+
+.row > div {
+  border: 2px solid blue;
+}
+
+.nav {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+}
+
+.nav a:active {
+  background-color: #F4A100;
+}
+
+.nav a:hover {
+  background-color: #F4A100;
+  color: #CB1000;
+  transition: .5s;
+  padding: 3px;
+}
+
+.nav li {
+  display: inline-block;
+  /* overflow: auto; -- holds the height when children are floated  */
+}
+
+.col img {
+  background-position: center;
+  text-align: center;
+}
